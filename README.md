@@ -1,3 +1,9 @@
+### Libreria
+Esta es una aplicación web básica implementada en Node.js y conexión a base de datos NoSQL MongoDB.
+
+La aplicación permite realizar operaciones CRUD (Create, Read, Update, Delete) de libros, registro e inicio de
+sesión de un usuario.
+
 ### Installation
 
 ```sh
