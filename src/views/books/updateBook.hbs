@@ -1,0 +1,28 @@
+<div class="col-md-4 mx-auto">
+
+    <div class="card">
+        <div class="card-header">
+            <h3>Actualizar libro</h3>
+            <div class="card-body">
+                <form action="/books/update/{{book.id}}?_method=PUT" method="POST">
+                    <input type="hidden" name="_method" value="PUT">
+                    <div class="form-group">
+                        <input type="text" name="title" class="form-control" value="{{book.title}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="author" class="form-control" value="{{book.author}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="year" class="form-control" value="{{book.year}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="status" class="form-control" value="{{book.status}}">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="submit">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="row">
+    {{#each books}}
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title d-flex justify-content-between -align-items-center">
+                    {{title}} <a href="/books/update/{{_id}}"><i class="fa-solid fa-pencil"></i></a>
+                </h4>
+                <p>
+                    {{author}}
+                </p>
+                <p>
+                    {{year}}
+                </p>
+                <p>
+                    {{status}}
+                </p>
+                <form action="/books/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-danger btn-block btn-sm">Borrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
